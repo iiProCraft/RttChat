@@ -1,0 +1,45 @@
+name: RttChat
+version: 1.0
+main: dev.rtt.development.rttchat.Main
+description: best chat plugin
+website: rttdevelopment.club
+
+depend:
+  - Vault
+softdepend:
+  - PlaceholderAPI
+
+commands:
+  broadcast:
+    aliases:
+      - bc
+      - alert
+  clearchat:
+    aliases:
+      - cc
+  rttchat:
+    aliases:
+      - rc
+      - rtt
+  togglechat:
+    aliases:
+      - chatmute
+      - mutechat
+  rules:
+  staffchat:
+    aliases:
+      - sc
+  help:
+  message:
+    aliases:
+      - msg
+      - dm
+      - pm
+  reply:
+    aliases:
+      - r
+      - re
+  socialspy:
+    aliases:
+      - ss
+      - spy
