@@ -21,9 +21,7 @@ public class StaffChatFormat implements Listener {
             e.setCancelled(true);
             staff.sendMessage(String.valueOf(Utils.getConfigMsg("StaffChatFormat").replace("{sender}", p.getName())) + msg);
           }
-      }
-      else
-      {
+      } else {
         StaffChatManager.DisableSC(p);
         p.sendMessage(Utils.color("&cStaffChat has been disabled automatically, You are no longer have permission"));
       }
