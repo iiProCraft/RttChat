@@ -35,6 +35,7 @@ public class Main extends JavaPlugin {
 
   private static Main instance;
 
+  @Override
   public void onEnable() {
     Bukkit.getConsoleSender().sendMessage("");
     Bukkit.getConsoleSender().sendMessage("§7§l§m------------------------------");
