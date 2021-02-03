@@ -1,0 +1,130 @@
+
+#     RttChat v1.0           #
+#      By DevRtt             #
+################################
+
+# =-=-=-=-=-= Basic =-=-=-=-=-=
+
+PluginPrefix: '&8[&6Rtt&eChat&8]&r'
+NoPermissions: '{Prefix} &cNo Permissions'
+
+# =-=-=-=-=--= Chat Channels Formats =-=-=-=-=-=-=
+
+#You can use PlaceholdersAPI placeholders in public chat format only !
+ChatFormat: '{chatprefix} {name} {chatsuffix}&8»&r'
+
+StaffChatFormat: '&8[&bSTAFF&8] &3{sender} &8»&r '
+
+Msg-Format: '&8(&7From &r{displayname} &8) &r'
+
+Reply-Format: '&8(&7To &r{displayname} &8) &r'
+
+
+
+#=-=-=-=-=-=[General Messages]=-=-=-=-=-=
+JoinMessage:
+  enabled: true
+  message: '{chatprefix} {name} &7has joined the server'
+
+QuitMessage:
+  enabled: true
+  message: '{chatprefix} {name} &7has left the server'
+
+# -= AntiSpam Options =-
+AntiSpam:
+  enabled: true
+  cooldown: 3    #in seconds default value is 3 seconds
+  cooldownMsg: '{Prefix} &7You need to wait &c{time} seconds&7 to use &b&lChat &7again'
+
+
+# -=-= AntiSwear =-=-
+AntiSwear:
+  enabled: true
+  replace: false
+  replaceWith: '*'
+  noSwearMsg: '{Prefix} &cPlease Dont be Toxic'
+
+Words:
+  BannedWords:
+    - 'blocked'
+
+#=-=-=-=-=-=-[CHAT MUTE OPTIONS]-=-=-=-=-=-=
+CantTalkChatMuted: '&cChat is Muted , Try Again later !'
+
+BannedCmds:
+  - '/msg'
+  - '/r'
+  - '/reply'
+  - '/message'
+  - '/me'
+
+ChatMute: '{Prefix} &7Chat has been &c&lMuted'
+
+ChatUnMute: '{Prefix} &7Chat has been &a&lUnmuted'
+
+
+#=-=-=-=-=-=-[Broadcast OPTIONS]-=-=-=-=-=-=
+BroadCast: '&6&lRtt&e&lChat &7&l>&r {message}'
+
+AutoBroadCast:
+  enabled: false
+  interval: 30
+  message:
+    - '&6&lTIP'
+
+
+# -= Other Commands Messages =-
+
+Motd:
+  enabled: true
+  message:
+    - '&7&l&m---------------------------'
+    - '     &b&lWelcome &7{name}'
+    - '   '
+    - '&aRead our rules via /rules'
+    - '&7&l&m---------------------------'
+
+Rules:
+  message:
+    - '&7&l&m------------------------------'
+    - ' '
+    - '             &3&lRules'
+    - ' '
+    - '&f&l- &bNo Toxicity'
+    - '&f&l- &bCheating is Forbidden'
+    - '&f&l- &bNo DDOS/Dox Threats'
+    - '&f&l- &bDeath Threats Are Forbidden'
+    - '&f&l- &bDoing anything harmful to the server is Forbidden'
+    - ' '
+    - '&7&l&m------------------------------'
+Help:
+  message:
+    - '&7&l&m------------------------------'
+    - ' '
+    - '             &3&lHelp'
+    - ' '
+    - '&f&l- &bEdit in config'
+    - ' '
+    - '&7&l&m------------------------------'
+
+#=-=-=-=-=-=[ChatClear Messages]=-=-=-=-=-=
+ClearChat: '&b&lChat has been Cleared By &3&l{operator}'
+ClearChatPlayer: '&d&lChat Has been cleared for you By &5&l{operator}'
+
+#=-=-=-=-=-=-=[Staff Chat Messages]=-=-=-=-=-=-=
+StaffChatEnabled: '&9StaffChat &7Has been Sucessfully &aEnabled'
+StaffChatDisabled: '&9StaffChat &7Has been Sucessfully &cDisabled'
+
+#=-=-=-=-=-=-=[Spy Mode Messages]=-=-=-=-=-=-=
+SpyOn: '&cSpyMode &7has been &aEnabled'
+SpyOff: '&9SpyMode &7has been &cDisabled'
+SpyFormat: '&8[&b&lSpy&8] &a{sender}&9&m--->&r &c{target} &e&l> &r{message}'
+
+#=-=-=-=-=-=-=[Privacy]=-=-=-=-=-=-=
+disableCommands:
+  - 'pl'
+  - 'plugins'
+  - 'bukkit:pl'
+  - 'bukkit:plugins'
+  - 'tps'
+BlockedMessage: '&cYou cant use this command'
